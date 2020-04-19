@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Call CSS-->
+        <link rel="stylesheet" href="Login.css" type="text/css" />
+       <!-- <link rel = "stylesheet" href = "Login.scss" type ="text/css"/>-->
+        
+        <!--Call js-->
+        <script type="text/javascript" src="Login.js"></script>
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <header>Login</header>
+        
+         <!--nav bar-->
+        <ul>
+            <li><a href = "HomePage.html"> Home </a></li>
+            <li><a href = "Workout.html"> Workout </a></li>
+            <li><a href = "About.html"> About </a></li>
+            <li><a href = "Login.html" class = "active"> Login </a></li>
+        </ul>
+      
+      <!--From: http://talkerscode.com/webtricks/responsive-login-and-signup-form-using-html-and-css.php -->
+      <div id = "wrapper">
+        <div class = "form_div">
+          <p class = "form_label">LOGIN</p>
+            <form method = "post" action = "">
+              <p><input type = "text" placeholder = "Email"></p>
+              <p><input type = "password" placeholder = "Password"></p>
+              <p><input type = "button" onlick = "window.location.href = 'Login.html';" value = "LOGIN"></p>
+            </form>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class = "form_div">
+          <p class = "form_label">SIGN UP</p>
+            <form method = "post" action = "">
+              <p><input type = "text" placeholder = "Name"></p>
+              <p><input type = "text" placeholder = "Email"></p>
+              <p><input type = "password" placeholder = "Password"></p>
+              <p><input type = "button" onlick = "window.location.href = 'Login.html';" value = "SIGNUP"></p>
+            </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
