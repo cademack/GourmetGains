@@ -1,0 +1,108 @@
+body{
+    background-image: linear-gradient(lightgrey, white);
+	background-size: cover;
+	height: 100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header{
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 70px;
+}
+
+img{
+	outline: 2px solid black;
+}
+
+ul{
+	list-style-type: none;	
+	width: 100%;
+	margin: 5px;
+	padding: 15px;
+	text-align: center;
+	overflow: hidden;
+}
+
+li{
+	float: none;
+	font-size: 25px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+li a{
+	display: inline-block;
+	color: black;
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	width: 25%;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+li a:hover{
+	background-color: darkgrey;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+h1{
+	font-size: 45px;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+}
+
+h3{
+	font-size: 35px;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+}
+
+hr{
+	height: 5px;
+	background: black;
+	width: 65%;
+}
+
+h2{
+	font-family: 'Electrolize', sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+/* for iframes */
+ .projects-wrapper {
+        max-width: 990px;
+        position: relative;
+        margin: 0 auto;
+        border: 0px solid black;
+   
+    }
+
+    .proj-box-format {
+        float: left;
+        height: 200px;
+        width: 30%;
+        margin: 10px;
+        
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
