@@ -1,0 +1,20 @@
+<h1>Listing Exercises</h1>
+<%= link_to 'Home', root_path %>
+<%= link_to 'New Exercise', new_exercise_path %>
+
+<table className="padding-table-columns">
+  <tr>
+    <th>Exercise</th>
+    <th>Link</th>
+    <th>Picture</th>
+    <th>Muscle Groups</th>
+  </tr>
+  <% @exercises.each do |exercise| %>
+    <tr>
+      <td><%= exercise.title %></td>
+      <td><%= exercise.link %></td>
+      <td><%= image_tag exercise.picture %></td>
+      <td><%= exercise.tags %></td>
+    </tr>
+  <% end %>
+</table>
