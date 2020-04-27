@@ -20,24 +20,17 @@
             <li><%= link_to 'Routines', routines_generate_path %></li>
         </ul>
         
-        <%= link_to 'New Exercise', new_exercise_path %>
+        <h1>Workout Routine Generation</h1>
+        <br>
+        <form>
+          <label for="fname">What muscle groups?</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">How many workouts?</label><br>
+          <input type="text" id="lname" name="lname">
+        </form>
         
-        <table className="padding-table-columns">
-          <tr>
-            <th>Exercise</th>
-            <th>Link</th>
-            <th>Picture</th>
-            <th>Muscle Groups</th>
-          </tr>
-          <% @exercises.each do |exercise| %>
-            <tr>
-              <td><%= exercise.title %></td>
-              <td><%= exercise.link %></td>
-              <td><%= image_tag exercise.picture %></td>
-              <td><%= exercise.tags %></td>
-            </tr>
-          <% end %>
-        </table>
+       <%= link_to 'Submit', routines_show_path %>
+        
        
        <br>
         <footer>
